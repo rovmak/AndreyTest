@@ -1,10 +1,20 @@
 {
   "name": "pla",
   "version": "1.0.0",
-  "description": "",
+  "description": "Playwright test automation for Sauce Demo",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:pom": "playwright test tests/saucedemo-pom.spec.ts",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install --with-deps"
+  },
+  "keywords": ["playwright", "testing", "automation", "e2e"],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
