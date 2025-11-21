@@ -38,7 +38,7 @@ test.describe('Sauce Demo - POM Tests', () => {
     // Verify cart badge
     const cartCount = await inventoryPage.getCartItemCount();
     expect(cartCount).toBe(3);
-    console.log('✓ Added 3 products to cart');
+    console.log('✓ Added 3 products to cart'); 
 
     // ========== GO TO CART ==========
     await inventoryPage.goToCart();
